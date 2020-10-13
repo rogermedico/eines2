@@ -1,7 +1,7 @@
 /**
  * Import variables
  */
-
+@import "fonts";
 @import "variables";
 
 /**
@@ -10,7 +10,11 @@
  * see commented examples below
  */
 
-@import "@fortawesome/fontawesome-free/css/all.css";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
@@ -19,7 +23,9 @@
  * It's a best practice to use a partial for each page
  */
 
-@import "layouts/home";
+@import "layouts/main";
+@import "layouts/sidebar";
+@import "layouts/content";
 
 /**
  * Do NOT include anything else in this file!

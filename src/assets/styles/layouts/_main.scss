@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  background-color: $background-color;
+}
+
+@media (min-width: $small) {
+  body {
+    display: flex;
+  }
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}

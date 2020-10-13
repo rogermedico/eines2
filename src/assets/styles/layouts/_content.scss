@@ -1,0 +1,24 @@
+@media (min-width: $small) {
+  main {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: $medium) {
+  main {
+    width: 60%;
+    max-width: 60%;
+  }
+}
+
+@media (min-width: $large) {
+  main {
+    width: 66.67%;
+    max-width: 66.67%;
+  }
+}
+
+main {
+  background-color: #0f0;
+}

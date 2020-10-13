@@ -1,4 +1,4 @@
-{
+module.exports = {
   "extends": "stylelint-config-standard",
   "plugins": [
     "stylelint-scss"
@@ -19,7 +19,9 @@
           "responsive",
           "variants",
           "screen",
-          "use"
+          "use",
+          "mixin",
+          "include"
         ]
       }
     ]

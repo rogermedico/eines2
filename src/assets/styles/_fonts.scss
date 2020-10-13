@@ -1,0 +1,9 @@
+@mixin google-font($family) {
+  @import url('https://fonts.googleapis.com/css?family=#{$family}');
+}
+
+@include google-font("Roboto");
+@include google-font("Roboto+Slab");
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-serif: 'Roboto Slab', serif;
