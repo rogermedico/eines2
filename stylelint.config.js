@@ -21,7 +21,9 @@ module.exports = {
           "screen",
           "use",
           "mixin",
-          "include"
+          "include",
+          "function",
+          "return"
         ]
       }
     ]

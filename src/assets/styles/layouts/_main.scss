@@ -18,10 +18,9 @@ body {
 
 a {
   color: $text-color;
-  // text-decoration: none;
+  text-decoration-color: $secondary-color;
 
   &:hover {
-    // text-decoration: underline;
-    color: $text-color-light;
+    color: $secondary-color;
   }
 }
