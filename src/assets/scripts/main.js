@@ -11,5 +11,12 @@
  */
 
 +( function() {
-  console.log('Hello, hacker! Nothing to search for here this time... :(');
+  const cm = document.getElementById("cryptedmail");
+  cm.addEventListener('click', ()=> {
+    cm.href = `mailto:${cm.dataset.name}@${cm.dataset.domain}.${cm.dataset.tld}`;
+  });
+  const cmi = document.getElementById('cmi'); 
+  cmi.addEventListener('click', () => {
+    cmi.href = `mailto:${cm.dataset.name}@${cm.dataset.domain}.${cm.dataset.tld}`;
+  });
 } )();

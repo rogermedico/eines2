@@ -85,3 +85,7 @@ ul {
     }
   }
 }
+
+.mobile-phone:after {
+  content: "+" attr(data-c) attr(data-d) attr(data-b) attr(data-a); 
+}
