@@ -7,6 +7,7 @@
 body {
   font-family: $font-family-sans-serif;
   background-color: $background-color;
+  color: $text-color;
 }
 
 @media (min-width: $small) {
@@ -16,10 +17,11 @@ body {
 }
 
 a {
-  color: $main-color;
-  text-decoration: none;
-  
+  color: $text-color;
+  // text-decoration: none;
+
   &:hover {
-    text-decoration: underline;
+    // text-decoration: underline;
+    color: $text-color-light;
   }
 }

@@ -1,24 +1,100 @@
-@media (min-width: $small) {
-  main {
+main {
+  // background-color: #0f0;
+  margin-left: 25px;
+  margin-right: 25px;
+
+  @media (min-width: $small) {
+    margin-left: 0;
     width: 50%;
     max-width: 50%;
   }
-}
-
-@media (min-width: $medium) {
-  main {
+  
+  @media (min-width: $medium) {
+    margin-left: 25px;
     width: 60%;
     max-width: 60%;
   }
-}
-
-@media (min-width: $large) {
-  main {
+  
+  @media (min-width: $large) {
     width: 66.67%;
     max-width: 66.67%;
   }
 }
 
-main {
-  background-color: #0f0;
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  font-family: $font-family-serif;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: $main-color;
+  line-height: 1.2;
+
+  @media (min-width: $small) {
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 1rem;
+  border-left: 3px solid $main-color;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  @media (min-width: $large) {
+    margin-left: 3rem;
+  }
+
+  &:last-child{
+    margin-bottom: 2rem;
+  }
+
+  & li {
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & .skill-title {
+      color: $main-color;
+      font-weight: 600;
+      @media (min-width: $medium) {
+        font-weight: 500;
+      }
+    }
+
+    & .separator {
+      font-weight: 700;
+    }
+
+    & .skill-explanation {
+      font-style: italic;
+    }
+
+    @media (min-width: $medium) {
+      font-size: 1rem;
+    }
+
+  }
+
+}
+
+.icon-container {
+  position: absolute;
+  top: 0.1rem;
+  left: -1.5rem;
+  width: 25px;
+  height: auto;
+  text-align: center;
+  & i {
+    color: $text-color-light;
+  }
 }

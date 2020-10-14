@@ -1,40 +1,52 @@
 .sidebar {
   margin-left: 25px;
   margin-right: 25px;
-}
 
-@media (min-width: $small) {
-  .sidebar {
+  @media (min-width: $small) {
     width: 50%;
     max-width: 50%;
   }
-}
 
-@media (min-width: $medium) {
-  .sidebar {
+  @media (min-width: $medium) {
     width: 40%;
     max-width: 40%;
   }
-}
-
-@media (min-width: $large) {
-  .sidebar {
+  
+  @media (min-width: $large) {
     width: 33.33%;
     max-width: 33.33%;
+  }
+
+  & p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $text-color;
+  
+    @media (min-width: $extra-small) {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+  
+    @media (min-width: $small) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 
 .avatar {
   margin: 1rem;
   text-align: center;
-}
 
-.avatar img {
-  height: auto;
-  width: 100%;
-  max-width: 250px;
-  border-radius: 50%;
-  shape-outside: circle(50%);
+  & img {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+  }
 }
 
 h1 {
@@ -50,47 +62,6 @@ h1 {
     text-align: left;
     font-weight: 500;
   }
-}
-
-.sidebar p {
-  margin-bottom: 1rem;
-  text-align: justify;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $text-color;
-
-  @media (min-width: $extra-small) {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
-  @media (min-width: $small) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-ul {
-  list-style-type: none;
-  margin-left: 5rem;
-}
-
-ul li {
-  position: relative;
-  margin-bottom: 0.5rem;
-}
-
-.icon-container {
-  position: absolute;
-  top: 0.1rem;
-  left: -1.5rem;
-  width: 25px;
-  height: auto;
-  text-align: center;
-}
-
-.icon-container i {
-  color: $text-color-light;
 }
 
 .contact-container {
