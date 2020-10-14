@@ -11,5 +11,5 @@
  */
 
 +( function() {
-  console.log('Hello, UOC!');
+  console.log('Hello, hacker! Nothing to search for here this time... :(');
 } )();
