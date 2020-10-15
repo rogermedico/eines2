@@ -48,46 +48,30 @@
   list-style-type: none;
   border-left: 3px solid $secondary-color;
 
-  @media (min-width: $large) {
-    margin-left: 3rem;
-  }
+  @media (min-width: $large) { margin-left: 3rem; }
 
-  &:last-child {
-    margin-bottom: 2rem;
-  }
+  &:last-child { margin-bottom: 2rem; }
 
   & li {
     margin-bottom: .5rem;
     margin-left: 1rem;
     font-size: .9rem;
 
-    @media (min-width: $medium) {
-      font-size: 1rem;
-    }
+    @media (min-width: $medium) { font-size: 1rem; }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+    &:last-child { margin-bottom: 0; }
   }
 }
 
 .skill-title {
   color: $secondary-color;
 
-  @media (min-width: $medium) {
-    font-weight: 500;
-  }
+  @media (min-width: $medium) { font-weight: 500; }
 }
 
-.separator {
-  font-weight: 700;
-}
+.separator { font-weight: 700; }
 
-.skill-explanation {
-  font-style: italic;
-}
+.skill-explanation { font-style: italic; }
 
 /* Mobile phone rendered with CSS to avoid spam bots */
-.mobile-phone::after {
-  content: "+" attr(data-c) attr(data-d) attr(data-b) attr(data-a); /* stylelint-disable-line */
-}
+.mobile-phone::after { content: "+" attr(data-c) attr(data-d) attr(data-b) attr(data-a); }

@@ -14,21 +14,15 @@ body {
   background-color: $background-color;
   color: $text-color;
 
-  @media (min-width: $small) {
-    display: flex;
-  }
+  @media (min-width: $small) { display: flex; }
 }
 
 a {
   color: $text-color;
   text-decoration-color: $secondary-color;
 
-  &:hover {
-    color: $secondary-color;
-  }
+  &:hover { color: $secondary-color; }
 }
 
 /* Mail rendered with CSS to avoid spam bots */
-.cryptedmail::after {
-  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); /* stylelint-disable-line */
-}
+.cryptedmail::after { content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); }
