@@ -10,6 +10,7 @@ module.exports = {
     "no-eol-whitespace": null,
     "declaration-empty-line-before": null,
     "value-keyword-case": null,
+    "number-leading-zero": "never",
     "at-rule-no-unknown": [
       true,
       {
