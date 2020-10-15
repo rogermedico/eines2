@@ -11,7 +11,7 @@
     width: 40%;
     max-width: 40%;
   }
-  
+
   @media (min-width: $large) {
     width: 33.33%;
     max-width: 33.33%;
@@ -24,12 +24,12 @@
     font-weight: 400;
     line-height: 1.5;
     color: $text-color;
-  
+
     @media (min-width: $extra-small) {
       margin-left: 3rem;
       margin-right: 3rem;
     }
-  
+
     @media (min-width: $small) {
       margin-left: 0;
       margin-right: 0;

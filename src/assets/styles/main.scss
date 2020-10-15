@@ -2,9 +2,9 @@
  * Import variables
  */
 
-@import "fonts";
-@import "variables";
-@import "functions";
+@import 'fonts';
+@import 'variables';
+@import 'functions';
 
 /**
  * Import npm dependencies
@@ -22,9 +22,9 @@
  * It's a best practice to use a partial for each page
  */
 
-@import "layouts/main";
-@import "layouts/sidebar";
-@import "layouts/content";
+@import 'layouts/main';
+@import 'layouts/sidebar';
+@import 'layouts/content';
 
 /**
  * Do NOT include anything else in this file!

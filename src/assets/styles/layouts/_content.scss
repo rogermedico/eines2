@@ -12,12 +12,12 @@
     width: 60%;
     max-width: 60%;
   }
-  
+
   @media (min-width: $medium) {
     margin-left: 25px;
     margin-right: 25px;
   }
-  
+
   @media (min-width: $large) {
     width: 66.67%;
     max-width: 66.67%;
@@ -74,4 +74,4 @@
 .skill-explanation { font-style: italic; }
 
 /* Mobile phone rendered with CSS to avoid spam bots */
-.mobile-phone::after { content: "+" attr(data-c) attr(data-d) attr(data-b) attr(data-a); }
+.mobile-phone::after { content: '+' attr(data-c) attr(data-d) attr(data-b) attr(data-a); }

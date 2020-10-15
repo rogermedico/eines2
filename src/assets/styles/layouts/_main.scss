@@ -25,4 +25,4 @@ a {
 }
 
 /* Mail rendered with CSS to avoid spam bots */
-.cryptedmail::after { content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); }
+.cryptedmail::after { content: attr(data-name) '@' attr(data-domain) '.' attr(data-tld); }

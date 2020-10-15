@@ -6,11 +6,16 @@ module.exports = {
   "rules": {
     "selector-nested-pattern": "^&",
     "indentation": 2,
-    "no-descending-specificity": null,
-    "no-eol-whitespace": null,
-    "declaration-empty-line-before": null,
-    "value-keyword-case": null,
+    "no-descending-specificity": true,
+    "no-eol-whitespace": true,
+    "declaration-empty-line-before": "never",
+    "value-keyword-case": "lower",
     "number-leading-zero": "never",
+    "unit-allowed-list": ["rem","%","px"],
+    "font-family-name-quotes": "always-unless-keyword",
+    "string-quotes": "single",
+    "declaration-block-single-line-max-declarations": 1,
+    "shorthand-property-no-redundant-values": true,
     "at-rule-no-unknown": [
       true,
       {
