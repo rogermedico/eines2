@@ -1,6 +1,7 @@
 /**
  * Import variables
  */
+
 @import "fonts";
 @import "variables";
 @import "functions";
@@ -11,13 +12,10 @@
  * see commented examples below
  */
 
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~@fortawesome/fontawesome-free/scss/regular';
-
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
 
 /**
  * Import layouts

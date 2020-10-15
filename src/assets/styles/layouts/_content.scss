@@ -1,4 +1,8 @@
-main {
+/**
+ * Main part rules
+ */
+
+.main-section {
   margin-left: 25px;
   margin-right: 25px;
 
@@ -12,8 +16,6 @@ main {
   @media (min-width: $medium) {
     margin-left: 25px;
     margin-right: 25px;
-    width: 60%;
-    max-width: 60%;
   }
   
   @media (min-width: $large) {
@@ -22,16 +24,15 @@ main {
   }
 }
 
-h2 {
+.subtitle {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  
   font-family: $font-family-serif;
   text-align: left;
   font-weight: 500;
   font-size: 1.6rem;
-  color: $main-color;
   line-height: 1.2;
+  color: $main-color;
 
   @media (min-width: $small) {
     text-align: left;
@@ -40,12 +41,12 @@ h2 {
   }
 }
 
-ul {
-  list-style-type: none;
+.skill-list {
   margin-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  list-style-type: none;
   border-left: 3px solid $secondary-color;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 
   @media (min-width: $large) {
     margin-left: 3rem;
@@ -56,36 +57,37 @@ ul {
   }
 
   & li {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
     margin-left: 1rem;
-    font-size: 0.9rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    & .skill-title {
-      color: $secondary-color;
-      // font-weight: 600;
-      @media (min-width: $medium) {
-        font-weight: 500;
-      }
-    }
-
-    & .separator {
-      font-weight: 700;
-    }
-
-    & .skill-explanation {
-      font-style: italic;
-    }
+    font-size: .9rem;
 
     @media (min-width: $medium) {
       font-size: 1rem;
     }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
-.mobile-phone:after {
-  content: "+" attr(data-c) attr(data-d) attr(data-b) attr(data-a); 
+.skill-title {
+  color: $secondary-color;
+
+  @media (min-width: $medium) {
+    font-weight: 500;
+  }
+}
+
+.separator {
+  font-weight: 700;
+}
+
+.skill-explanation {
+  font-style: italic;
+}
+
+/* Mobile phone rendered with CSS to avoid spam bots */
+.mobile-phone::after {
+  content: "+" attr(data-c) attr(data-d) attr(data-b) attr(data-a); /* stylelint-disable-line */
 }

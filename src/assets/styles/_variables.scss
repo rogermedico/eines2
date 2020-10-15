@@ -1,14 +1,25 @@
+/**
+ * Variables file
+ */
+
 @use "sass:color";
 
-$fa-font-path: "../fonts";
+/* Tell fontawesome where his files are located */
+$fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
 
+/* Define media queries breackpoints */
 $extra-small: 576px;
 $small: 768px;
 $medium: 992px;
 $large: 1200px;
 
+/* Define colors */
 $main-color: #003f88;
 $secondary-color: #0077b6;
 $text-color: #353535;
 $text-color-light: color.scale($text-color, $lightness: 30%);
 $background-color: #fff;
+
+/* Define fonts */
+$font-family-sans-serif: 'Roboto', Arial, Helvetica, sans-serif;
+$font-family-serif: 'Roboto Slab', Georgia, Times, serif;
