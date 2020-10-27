@@ -26,6 +26,24 @@
   }
 }
 
+.sidebar__title {
+  margin-bottom: .5rem;
+  font-family: $font-family-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  color: $main-color;
+
+  @media (min-width: $small) {
+    text-align: left;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  @media (min-width: size-plus-50px($small)) { font-size: 2.1rem; }
+}
+
 .sidebar__p {
   margin-bottom: 1rem;
   text-align: justify;
@@ -45,24 +63,6 @@
   }
 
   @media (min-width: $medium) { font-size: 1rem; }
-}
-
-.sidebar__title {
-  margin-bottom: .5rem;
-  font-family: $font-family-serif;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.9rem;
-  line-height: 1.2;
-  color: $main-color;
-
-  @media (min-width: $small) {
-    text-align: left;
-    font-weight: 500;
-    font-size: 2rem;
-  }
-
-  @media (min-width: size-plus-50px($small)) { font-size: 2.1rem; }
 }
 
 .sidebar__contact {
