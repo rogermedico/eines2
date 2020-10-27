@@ -10,7 +10,7 @@
  * Write any other JavaScript below
  */
 
-+( function() {
+(() => {
   const cm = document.getElementById("cryptedmail");
   cm.addEventListener('click', ()=> {
     cm.href = `mailto:${cm.dataset.name}@${cm.dataset.domain}.${cm.dataset.tld}`;
@@ -19,4 +19,4 @@
   cmi.addEventListener('click', () => {
     cmi.href = `mailto:${cm.dataset.name}@${cm.dataset.domain}.${cm.dataset.tld}`;
   });
-} )();
+})();

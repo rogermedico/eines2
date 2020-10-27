@@ -17,7 +17,7 @@ body {
   @media (min-width: $small) { display: flex; }
 }
 
-a {
+.link {
   color: $text-color;
   text-decoration-color: $secondary-color;
 

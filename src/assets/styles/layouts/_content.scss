@@ -2,7 +2,7 @@
  * Main part rules
  */
 
-.main-section {
+.main {
   margin-left: 25px;
   margin-right: 25px;
 
@@ -24,7 +24,7 @@
   }
 }
 
-.subtitle {
+.area__title {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: $font-family-serif;
@@ -41,7 +41,7 @@
   }
 }
 
-.skill-list {
+.area__list {
   margin-left: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -51,27 +51,27 @@
   @media (min-width: $large) { margin-left: 3rem; }
 
   &:last-child { margin-bottom: 2rem; }
-
-  & li {
-    margin-bottom: .5rem;
-    margin-left: 1rem;
-    font-size: .9rem;
-
-    @media (min-width: $medium) { font-size: 1rem; }
-
-    &:last-child { margin-bottom: 0; }
-  }
 }
 
-.skill-title {
+.area__list__skill {
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+  font-size: .9rem;
+
+  @media (min-width: $medium) { font-size: 1rem; }
+
+  &:last-child { margin-bottom: 0; }
+}
+
+.area__list__skill--title {
   color: $secondary-color;
 
   @media (min-width: $medium) { font-weight: 500; }
 }
 
-.separator { font-weight: 700; }
+.area__list__skill--separator { font-weight: 700; }
 
-.skill-explanation { font-style: italic; }
+.area__list__skill--explanation { font-style: italic; }
 
 /* Mobile phone rendered with CSS to avoid spam bots */
 .mobile-phone::after { content: '+' attr(data-c) attr(data-d) attr(data-b) attr(data-a); }
